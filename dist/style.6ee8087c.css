@@ -1,0 +1,27 @@
+body {
+/*    background: lightblue;*/
+     background-image: url("/landscape waves.9bad2bf6.gif");
+      background-size: cover;
+    color: #0E0E0E;
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+}
+
+#title {
+    color: #0E0E0E;
+    font-size: 3em;
+    padding-bottom: 25px;
+    text-align: left;
+}
+
+#output {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.dg.a {
+    float: left !important;
+}
+
+/*# sourceMappingURL=/style.6ee8087c.css.map */

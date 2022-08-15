@@ -30202,11 +30202,11 @@ var videoWidth, videoHeight;
 var sketchGuiState = {
   showVideo: true,
   showSideVideo: true,
-  numberOfSections: 10,
+  numberOfSections: 8,
   showSectionBorders: true,
-  sectionBorderWidth: 5,
+  sectionBorderWidth: 1,
   sectionBorderColor: '#000000',
-  overallOpacity: 0.8,
+  overallOpacity: 1,
   keypoints: {
     showPoint: true,
     controlPointLocation: 'nose',
@@ -30216,43 +30216,43 @@ var sketchGuiState = {
   },
   section1: {
     opacity: 0.8,
-    leftColor: '#00c1ff',
-    rightColor: '#00c1ff'
+    leftColor: '#ffadad',
+    rightColor: '#ffadad'
   },
   section2: {
     opacity: 0.8,
-    leftColor: '#00c1ff',
-    rightColor: '#ff00d1'
+    leftColor: '#ffd6a5',
+    rightColor: '#ffd6a5'
   },
   section3: {
     opacity: 0.8,
-    leftColor: '#ff00d1',
-    rightColor: '#ff00d1'
+    leftColor: '#fdffb6',
+    rightColor: '#fdffb6'
   },
   section4: {
     opacity: 0.8,
-    leftColor: '#ff00d1',
-    rightColor: '#6cff2f'
+    leftColor: '#caffbf',
+    rightColor: '#caffbf'
   },
   section5: {
     opacity: 0.8,
-    leftColor: '#6cff2f',
-    rightColor: '#6cff2f'
+    leftColor: '#9bf6ff',
+    rightColor: '#9bf6ff'
   },
   section6: {
     opacity: 0.8,
-    leftColor: '#6cff2f',
-    rightColor: '#c4acff'
+    leftColor: '#a0c4ff',
+    rightColor: '#a0c4ff'
   },
   section7: {
     opacity: 0.8,
-    leftColor: '#c4acff',
-    rightColor: '#c4acff'
+    leftColor: '#bdb2ff',
+    rightColor: '#bdb2ff'
   },
   section8: {
     opacity: 0.8,
-    leftColor: '#c4acff',
-    rightColor: '#ffff6b'
+    leftColor: '#ffc6ff',
+    rightColor: '#ffc6ff'
   },
   section9: {
     opacity: 0.8,
@@ -30438,10 +30438,10 @@ function _sketchLoop() {
                 } // Rectangle Overlay
 
 
-                ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
                 ctx.fillStyle = newColorString;
-                ctx.fillRect(currentSectionLeftX, 0, canvas.width / (sectionWidth / 15), canvas.height); //       ctx.fillStyle = newColorString;
+                ctx.fillRect(currentSectionLeftX, 0, canvas.width / (sectionWidth / 26.2), canvas.height); //       ctx.fillStyle = newColorString;
                 //        ctx.fillRect(0, 0, currentSection.width, currentSection.height);
                 // 
 
@@ -30561,8 +30561,8 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-var videoWidth = window.innerWidth / 1.1;
-var videoHeight = window.innerWidth / 2.4;
+var videoWidth = window.innerWidth / 1;
+var videoHeight = window.innerWidth / 1.62;
 document.getElementById("canvas-container").style.marginTop = window.innerHeight / 2 - videoHeight / 2 + 'px';
 var mobile = isMobile();
 

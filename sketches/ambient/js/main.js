@@ -18,8 +18,8 @@ import dat from "dat.gui";
 import PoseDetection from "../../PoseDetection";
 import { setupSketch, initSketchGui } from "./sketch";
 
-const videoWidth = window.innerWidth/1.1;
-const videoHeight = window.innerWidth/2.4;
+const videoWidth = window.innerWidth/1;
+const videoHeight = window.innerWidth/1.62;
 document.getElementById("canvas-container").style.marginTop = (window.innerHeight/2 - videoHeight/2) + 'px'
 
 const mobile = isMobile();

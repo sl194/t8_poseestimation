@@ -19,7 +19,7 @@ import PoseDetection from "../../PoseDetection";
 import { setupSketch, initSketchGui } from "./sketch";
 
 const videoWidth = window.innerWidth/1;
-const videoHeight = window.innerWidth/1.62;
+const videoHeight = window.innerWidth/1.55;
 document.getElementById("canvas-container").style.marginTop = (window.innerHeight/2 - videoHeight/2) + 'px'
 
 const mobile = isMobile();

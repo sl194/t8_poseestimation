@@ -62,7 +62,7 @@ let videoWidth, videoHeight;
 let sketchGuiState = {
   showVideo: true,
   showSideVideo: true,
-  numberOfSections: 8,
+  numberOfSections: 5,
   showSectionBorders: true,
   sectionBorderWidth: 1,
   sectionBorderColor: '#000000',
@@ -76,30 +76,30 @@ let sketchGuiState = {
   },
   section1: {
     opacity: 0.8,
-    leftColor: '#ffadad',
-    rightColor: '#ffadad',
+ leftColor: '#ffc000',
+    rightColor: '#ffc000',
   },
     
      section2: {
     opacity: 0.8,
-    leftColor: '#ffd6a5',
-    rightColor: '#ffd6a5',
+    leftColor: '#fffc00',
+    rightColor: '#fffc00',
      },
          
   section3: {
     opacity: 0.8,
-    leftColor: '#fdffb6',
-    rightColor: '#fdffb6',
+  leftColor: '#ff0000',
+    rightColor: '#ff0000',
   },
   section4: {
     opacity: 0.8,
-    leftColor: '#caffbf',
-    rightColor: '#caffbf',
+    leftColor: '#00ffff',
+    rightColor: '#00ffff',
   },
   section5: {
     opacity: 0.8,
-    leftColor: '#9bf6ff',
-    rightColor: '#9bf6ff',
+    leftColor: '#ff00ff',
+    rightColor: '#ff00ff',
   },
   section6: {
     opacity: 0.8,
@@ -374,7 +374,7 @@ async function sketchLoop() {
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         ctx.fillStyle = newColorString;
-        ctx.fillRect(currentSectionLeftX, 0, canvas.width/(sectionWidth/26.2), canvas.height);
+        ctx.fillRect(currentSectionLeftX, 0, canvas.width/(sectionWidth/67), canvas.height);
           
         
 //       ctx.fillStyle = newColorString;

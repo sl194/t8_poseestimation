@@ -68,7 +68,7 @@ let videoWidth, videoHeight;
 let sketchGuiState = {
   showVideo: true,
   showSideVideo: true,
-  numberOfSections: 6,
+  numberOfSections: 5,
   showSectionBorders: true,
   sectionBorderWidth: 1,
   sectionBorderColor: "#000000",
